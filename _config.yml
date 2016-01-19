@@ -1,12 +1,12 @@
 # Site settings
-title: everydata
-description: 'data is cool'
+title: danicodes
+description: 'moving from confusion to understanding with data'
 url: 'http://danicodes.github.io' 
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 
 author:
-  name: 'Daniell Williams'
+  name: 'Danielle Williams'
   email: d.liza.williams11@gmail.com
   twitter_username: dannicodes
   github_username:  danicodes
