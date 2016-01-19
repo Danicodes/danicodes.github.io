@@ -1,16 +1,30 @@
 # Site settings
+<<<<<<< HEAD
 title: Everyday Data
 description: data is cool
 url: 'http://danicodes.github.io'
+=======
+title: danicodes
+description: 'moving from confusion to understanding with data'
+url: 'http://danicodes.github.io' 
+>>>>>>> 6b8674d2cce638a954e0f44b148f2a543348f1b1
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 
 author:
   name: 'Danielle Williams'
+<<<<<<< HEAD
   email: d.liz.williams@gmail.com
   twitter_username: dannicodes
   github_username:  danicodes
   linkedin_username:  danicodes
+=======
+  email: d.liza.williams11@gmail.com
+  twitter_username: dannicodes
+  github_username:  danicodes
+  linkedin_username:  danicodes
+
+>>>>>>> 6b8674d2cce638a954e0f44b148f2a543348f1b1
 
 # Build settings
 destination: _site
