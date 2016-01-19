@@ -1,16 +1,17 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno' 
-baseurl: '/jekyll-uno/'
+title: everydata
+description: 'data is cool'
+url: 'http://danicodes.github.io' 
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Daniell Williams'
+  email: d.liza.williams11@gmail.com
+  twitter_username: dannicodes
+  github_username:  danicodes
+  linkedin_username:  danicodes
+
 
 # Build settings
 destination: _site
