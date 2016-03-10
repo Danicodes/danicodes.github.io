@@ -14,7 +14,7 @@ How much exactly are we paying and how much **should** we be paying?
 
 After a friend from class brought up his initial calculations, I thought it
 might be worth looking into this injustice -- then I realized
-[Joe Wlos '14]({http://gumag.net/dont-choose-your-dining-plan-yet/}) had the same idea. So I'm just going to expand on some of the
+[Joe Wlos '14](http://gumag.net/dont-choose-your-dining-plan-yet/) had the same idea. So I'm just going to expand on some of the
 things he brought up in the GUM article.
 
 ****
@@ -25,7 +25,7 @@ things he brought up in the GUM article.
 
 The size of the bubbles indicate how many meals per semester the plan covers, while (as indicated by the legend) the darker color indicates a higher price per meal that the plan covers.
 
-This should immediately indicate to you, my friends on the **10 Plus** meal plan, that we got the shortest possible end of the stick. We've got a midsized number of meals and yet we are effectively paying **$20.75 PER MEAL.**
+This should immediately indicate to you, my friends on the **10 Plus** meal plan, that we got the shortest possible end of the stick. We've got a midsized number of meals and yet we are effectively paying **$20.25 PER MEAL.**
 
 ****
 
