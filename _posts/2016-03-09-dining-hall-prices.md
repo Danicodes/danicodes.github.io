@@ -2,8 +2,8 @@
 layout: post
 title:  "Dining Hall Prices"
 date:   2016-03-09
-categories:
-tags: [Grinnell][Dining Services][Overpriced][Food][Exploration]
+categories: [Exploration]
+tags: [Grinnell, Dining Services, Overpriced, Food, Exploration]
 ---
 <i>(Fitting that my first blog post is about food)</i>
 
