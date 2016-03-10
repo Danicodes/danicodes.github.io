@@ -14,7 +14,7 @@ How much exactly are we paying and how much **should** we be paying?
 
 After a friend from class brought up his initial calculations, I thought it
 might be worth looking into this injustice -- then I realized
-[Joe Wlos '14]({%http://gumag.net/dont-choose-your-dining-plan-yet/%}) had the same idea. So I'm just going to expand on some of the
+[Joe Wlos '14]({http://gumag.net/dont-choose-your-dining-plan-yet/}) had the same idea. So I'm just going to expand on some of the
 things he brought up in the GUM article.
 
 ****
