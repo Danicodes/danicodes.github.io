@@ -29,7 +29,7 @@ meals offered by our plans at the door?
 
 The first graph shows a side by side comparison while the graph below shows the difference between cost at the door and current price of the plan.
 
-The cost at the door was calculated by assuming 14 weeks of usage and each plan was split up evenly across meals with the exception of the off-campus meal plans. That value was added to the amount of dining dollars allotted and the amount of guest meals (assuming those meals are all going towards dinner). [Here is the [table](https://grinco-my.sharepoint.com/personal/williams11_grinnell_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=90XDpSygO2mVKQqH1gN8ZXQ9z9qQzZ1zquyZIUoeSto%3d&docid=0471b0b7c409442f3959fa3697d2d509f) that I've adapted from the GUM's article.]
+The cost at the door was calculated by assuming 14 weeks of usage and the number of meals per week in each plan was split up evenly across breakfast, lunch, and dinner, with the exception of the off-campus meal plans. That value was added to the amount of dining dollars allotted and the amount of guest meals (assuming those meals are all going towards dinner). [Here is the [table](https://grinco-my.sharepoint.com/personal/williams11_grinnell_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=90XDpSygO2mVKQqH1gN8ZXQ9z9qQzZ1zquyZIUoeSto%3d&docid=0471b0b7c409442f3959fa3697d2d509f) that I've adapted from the GUM's article.]
 
 This should immediately indicate to you, my friends on the **10 Plus** meal plan, that we are being seriously overcharged. The difference between what we would pay at the door and the amount we are paying now was calculated to be **$852.00**. No amount of Chocolate Lasagna in the world is worth that much.
 
