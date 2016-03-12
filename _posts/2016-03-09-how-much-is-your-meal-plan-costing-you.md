@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How Much is Your Meal Plan Costing You?"
+title:  How Much is Your Meal Plan Costing You?
 date:   2016-03-09
 published: true
 categories: [Exploration]
