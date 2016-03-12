@@ -3,7 +3,7 @@ layout: post
 title:  "How Much is Your Meal Plan Costing You?"
 date:   2016-03-09
 published: true
-categories: [Exploration][Food]
+categories: [Exploration]
 tags: [Grinnell, Dining Services, Overpriced, Food, Exploration]
 ---
 <i>(Everyone loves dining hall food)</i>
@@ -40,7 +40,7 @@ meal that the plan covers.
 
 Yet again, we see that on the  **10 Plus** meal plan,
 that we got the shortest possible end of the stick. We've got a midsized number
-of meals (140 assuming a 14 week semester) and are paying $2835.00 per semester, translating to **$20.25 PER MEAL.**
+of meals (140 meals assuming a 14 week semester) and are paying $2835.00 per semester, translating to **$20.25 PER MEAL.**
 
 ****
 
