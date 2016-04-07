@@ -3,16 +3,16 @@ layout: post
 title:  Challenge Accepted
 date:   2016-04-06
 published: true
-categories: [python, data]
-tags: [python, jobs]
+categories: [python, challenges]
+tags: [python, data, analysis, challenges]
 ---
 Data Analysis Challenges
 
 ### *Counting Vitae* ###
 
-**Goal:** Using a plaintext copy of your resume, create a bar chart of character frequency.
-
-  *(Bonus: programmatically strip out punctuation and whitespace.)*  
+       Using a plaintext copy of your resume, create a bar chart of character
+    frequency.
+    (Bonus: programmatically strip out punctuation and whitespace.)  
 
 <div>
           <a href="https://plot.ly/~williams11/0/"
@@ -26,17 +26,41 @@ Data Analysis Challenges
 
 ### *Friendly Competition* ###
 
+    Which department has the most openings?
+
+Most of the job posts here were made internally and externally, so I decided to look at only internal postings to avoid counting duplicate postings. In addition, external postings can implicitly be seen by internal employees while other postings are only made available internally, thus limiting the scope to the internal posting type should give accurate results.
+
 ![](/assets/AvailablePositions.jpg)
 
-Max (2872 open positions):
-* Department of Health & Mental Hygiene
 
-Min (2 open positions):
-*  Civil Service Commission
-*  Landmarks Preservation
-*  Office of Collective Bargaining
-*  Manhattan Community Board #10
-*  NYC Police Pension Fund
-*  President Borough of Manhattan
+Max (1455 open positions):
+*  Department of Health & Mental Hygiene
+
+Min (1 open position):
+*   Civil Service Commission
+*   Landmarks Preservation
+*   Office of Collective Bargaining
+*   Manhattan Community Board #10
+*   NYC Police Pension Fund
+*   President Borough of Manhattan
+
+
+    Which departments have the highest and the lowest paying positions
+    (based on current job openings)?
+
+Based on the excel sheet
+
+*Lowest*
+
+Office of Collective Bargaining offers the lowest hourly rate, offering two positions ranging from $9/hour to $10/hour.
+
+*Highest*
+
+Department of Health & Mental Hygiene offers 30 positions with pay ranging from $71/hour to $76/hour. (Sounds good to me)
+Fire Department offers the same rate for two positions.
+
+
+    Which jobs do you think are the hardest to fill?
+    (What makes you say that?)
 
 ### *Show Off* ###
