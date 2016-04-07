@@ -6,10 +6,13 @@ published: true
 categories: [python, data]
 tags: [python, jobs]
 ---
-## *Counting Vitae* ##
-Goal: Using a plaintext copy of your resume, create a bar chart of    
-      character frequency.
-      *(Bonus: programmatically strip out punctuation and whitespace.)*  
+Data Analysis Challenges
+
+### *Counting Vitae* ###
+
+**Goal:** Using a plaintext copy of your resume, create a bar chart of character frequency.
+
+  *(Bonus: programmatically strip out punctuation and whitespace.)*  
 
 <div>
           <a href="https://plot.ly/~williams11/0/"
@@ -21,4 +24,19 @@ Goal: Using a plaintext copy of your resume, create a bar chart of
 
 
 
-## *Friendly Competition* ##
+### *Friendly Competition* ###
+
+![](/assets/AvailablePositions.jpg)
+
+Max (2872 open positions):
+* Department of Health & Mental Hygiene
+
+Min (2 open positions):
+*  Civil Service Commission
+*  Landmarks Preservation
+*  Office of Collective Bargaining
+*  Manhattan Community Board #10
+*  NYC Police Pension Fund
+*  President Borough of Manhattan
+
+### *Show Off* ###
