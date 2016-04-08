@@ -6,11 +6,12 @@ published: true
 categories: [python, challenges]
 tags: [python, data, analysis, challenges]
 ---
-Data Analysis Challenges
 
+Data Analysis Challenges
+****
 ### *Counting Vitae* ###
 
-       Using a plaintext copy of your resume, create a bar chart of character
+>Using a plaintext copy of your resume, create a bar chart of character
     frequency.
     (Bonus: programmatically strip out punctuation and whitespace.)  
 
@@ -20,13 +21,13 @@ Data Analysis Challenges
           <script data-plotly="williams11:0"  src="https://plot.ly/embed.js" async></script>
 </div>
 
-*Code for this visualization can be found* [here](https://github.com/Danicodes/WMChallenge/blob/master/WorkMarketChallege.py)
+*Code for this visualization can be found [here](https://github.com/Danicodes/WMChallenge/blob/master/WorkMarketChallege.py)*
 
-
+****
 
 ### *Friendly Competition* ###
 
-    Which department has the most openings?
+>Which department has the most openings?
 
 Most of the job posts here were made internally and externally, so I decided to look at only internal postings to avoid counting duplicate postings. In addition, external postings can implicitly be seen by internal employees while other postings are only made available internally, thus limiting the scope to the internal posting type should give accurate results.
 
@@ -44,8 +45,7 @@ Min (1 open position):
 *   NYC Police Pension Fund
 *   President Borough of Manhattan
 
-
-    Which departments have the highest and the lowest paying positions
+>Which departments have the highest and the lowest paying positions
     (based on current job openings)?
 
 Based on the excel sheet
@@ -59,8 +59,14 @@ Office of Collective Bargaining offers the lowest hourly rate, offering two posi
 Department of Health & Mental Hygiene offers 30 positions with pay ranging from $71/hour to $76/hour. (Sounds good to me)
 Fire Department offers the same rate for two positions.
 
+> Which jobs do you think are the hardest to fill?
+  (What makes you say that?)
 
-    Which jobs do you think are the hardest to fill?
-    (What makes you say that?)
 
+****
 ### *Show Off* ###
+
+> Pick any dataset on labor you can find.
+  Draw a comparison between two related datasets or points of view (e.g. Which industries are laying off the most people and which industries have a huge hiring gap?)
+
+> Show the relative results in a single page, slide, blog post, or document with some pretty graphs and supporting text.
