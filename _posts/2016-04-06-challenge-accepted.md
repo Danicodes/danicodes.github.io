@@ -7,8 +7,12 @@ categories: [python, challenges]
 tags: [python, data, analysis, challenges]
 ---
 
-Data Analysis Challenges
 ****
+
+Data Analysis Challenges
+
+****
+
 ### *Counting Vitae* ###
 
 >Using a plaintext copy of your resume, create a bar chart of character
@@ -34,37 +38,49 @@ Most of the job posts here were made internally and externally, so I decided to 
 ![](/assets/AvailablePositions.jpg)
 
 
-Max (1455 open positions):
-*  Department of Health & Mental Hygiene
+As indicated by the treemap above, Department of Health & Mental Hygiene has the most (1455) openings.
 
-Min (1 open position):
-*   Civil Service Commission
-*   Landmarks Preservation
-*   Office of Collective Bargaining
-*   Manhattan Community Board #10
-*   NYC Police Pension Fund
-*   President Borough of Manhattan
 
 >Which departments have the highest and the lowest paying positions
     (based on current job openings)?
 
-Based on the excel sheet
+|Department| Salary Fr.| Salary from | Salary to |
+|--------|:------------:|------------:|----------:|
+|Office of Collective Bargaining|Hourly|$9|$10|
+| Department of Health/Mental Hygiene|Hourly|$71|$76|
 
-*Lowest*
+<u>*Hourly*</u>
 
 Office of Collective Bargaining offers the lowest hourly rate, offering two positions ranging from $9/hour to $10/hour.
 
-*Highest*
+Department of Health & Mental Hygiene and Fire Department offer the highest salary range from $71/hour to $76/hour.
 
-Department of Health & Mental Hygiene offers 30 positions with pay ranging from $71/hour to $76/hour. (Sounds good to me)
-Fire Department offers the same rate for two positions.
+<u>*Daily*
+
+
+
+
+<u>*Annually*
+
+Department of Environmental Protection offers the lowest start salary range -- $25,997
+
+Admin Trials and Hearings offers the lowest end salary range -- $29,000
+
+Department of Health & Mental Hygiene offers the maximum end salary range -- $218,799/yr.
+
+Department of Environmental Protection offers the maximum starting salary range -- $198,518/yr.
+
+
+
 
 > Which jobs do you think are the hardest to fill?
   (What makes you say that?)
 
 
 ****
+
 ### *Show Off* ###
+
 
 > Pick any dataset on labor you can find.
   Draw a comparison between two related datasets or points of view (e.g. Which industries are laying off the most people and which industries have a huge hiring gap?)
