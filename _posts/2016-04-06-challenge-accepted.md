@@ -44,21 +44,18 @@ As indicated by the treemap above, Department of Health & Mental Hygiene has the
 >Which departments have the highest and the lowest paying positions
     (based on current job openings)?
 
-|Department| Salary Fr.| Salary from | Salary to |
-|--------|:------------:|------------:|----------:|
-|Office of Collective Bargaining|Hourly|$9|$10|
-| Department of Health/Mental Hygiene|Hourly|$71|$76|
 
 <u>*Hourly*</u>
 
-Office of Collective Bargaining offers the lowest hourly rate, offering two positions ranging from $9/hour to $10/hour.
+Office of Collective Bargaining offers the lowest houly rate, offering two positions ranging from $9 to $10.
 
-Department of Health & Mental Hygiene and Fire Department offer the highest salary range from $71/hour to $76/hour.
+Department of Health & Mental Hygiene and Fire Department offer the highest salary range from $71 to $76.
 
 <u>*Daily*
 
+Department of Citywide Admin Services offers the lowest start and end salary at $232
 
-
+Department of Sanitation offers the highest start and end salary at $406
 
 <u>*Annually*
 
@@ -75,6 +72,8 @@ Department of Environmental Protection offers the maximum starting salary range 
 
 > Which jobs do you think are the hardest to fill?
   (What makes you say that?)
+
+From article that I've read, it seems that the positions that are most difficult to fill are those which require skilled workers or are management positions. The time frame of the post is also a good indicator of the level of recruiting difficulty. Posts that are been available for a long span of time show that the departments expect to take a large amount of time to find a suitable candidate. For example the Board of Correction is attempting to hire a Deputy Executive Director of Research and expects to take a year to find one.   
 
 
 ****
