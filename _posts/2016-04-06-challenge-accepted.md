@@ -45,27 +45,27 @@ As indicated by the treemap above, Department of Health & Mental Hygiene has the
     (based on current job openings)?
 
 
-<u>*Hourly*</u>
+*<u>Hourly</u>*
 
-Office of Collective Bargaining offers the lowest houly rate, offering two positions ranging from $9 to $10.
+Office of Collective Bargaining offers the lowest hourly rate, offering two positions ranging from $9 to $10.
 
 Department of Health & Mental Hygiene and Fire Department offer the highest salary range from $71 to $76.
 
-<u>*Daily*
+*<u>Daily*
 
 Department of Citywide Admin Services offers the lowest start and end salary at $232
 
 Department of Sanitation offers the highest start and end salary at $406
 
-<u>*Annually*
+*<u>Annually*
 
 Department of Environmental Protection offers the lowest start salary range -- $25,997
 
 Admin Trials and Hearings offers the lowest end salary range -- $29,000
 
-Department of Health & Mental Hygiene offers the maximum end salary range -- $218,799/yr.
+Department of Health & Mental Hygiene offers the maximum end salary range -- $218,799.
 
-Department of Environmental Protection offers the maximum starting salary range -- $198,518/yr.
+Department of Environmental Protection offers the maximum starting salary range -- $198,518.
 
 
 
@@ -73,15 +73,12 @@ Department of Environmental Protection offers the maximum starting salary range 
 > Which jobs do you think are the hardest to fill?
   (What makes you say that?)
 
-From article that I've read, it seems that the positions that are most difficult to fill are those which require skilled workers or are management positions. The time frame of the post is also a good indicator of the level of recruiting difficulty. Posts that are been available for a long span of time show that the departments expect to take a large amount of time to find a suitable candidate. For example the Board of Correction is attempting to hire a Deputy Executive Director of Research and expects to take a year to find one.   
+*Analyzing the [NYC Jobs dataset](https://data.cityofnewyork.us/City-Government/NYC-Jobs/kpav-sd4t)*
 
+ The time frame of a job post is potentially indicative of the level of hiring difficulty. Posts that are made available for a large span of time either show that the departments expect to take a large span of time to find a suitable candidate or perhaps there is not a high urgency for that position to be filled. For example the Board of Correction posted a Deputy Executive Director of Research position on March 15 of this year and it will remain posted until the same date in 2017, however it does not immediately follow that this is a difficult position to fill.  
+
+ From this dataset, it seems that the jobs that are management based are harder to fill. Although not many postings included a post until date, many included the date posted, there were several management level positions dating back to 2011, which may correlate to hiring difficulty.
+
+ Although there was no codebook present for this dataset, I inferred that the 'Level' variable is referring to the difficulty level of the job, with 0 indicating least difficulty and M*x* indicating a management-level position. There is a potential  correlation between the level of the position and the hiring difficulty however it is small. Although management based positions are more difficult, not all are difficult positions to fill.
 
 ****
-
-### *Show Off* ###
-
-
-> Pick any dataset on labor you can find.
-  Draw a comparison between two related datasets or points of view (e.g. Which industries are laying off the most people and which industries have a huge hiring gap?)
-
-> Show the relative results in a single page, slide, blog post, or document with some pretty graphs and supporting text.
