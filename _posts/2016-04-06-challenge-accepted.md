@@ -7,11 +7,10 @@ categories: [python, challenges]
 tags: [python, data, analysis, challenges]
 ---
 
-****
 
 Data Analysis Challenges
 
-****
+******************
 
 ### *Counting Vitae* ###
 
