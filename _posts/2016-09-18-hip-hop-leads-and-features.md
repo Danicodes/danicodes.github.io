@@ -6,7 +6,7 @@ published: true
 categories: [python, challenges, machine learning]
 tags: [python, data, analysis, challenges]
 ---
-
+*Using k-means cluster to categorize hip hop artists*
 
 ***************
 ***Hip-Hop Collabs and Popularity***
@@ -46,7 +46,7 @@ or leads, many features or leads) on which they would separate.
 
 This graph shows that grouping.
 
-![](assets/Main_v_support.png)
+![](/assets/Main_v_support.png)
 
 
 
@@ -59,9 +59,9 @@ of our artists, their rating is an aggregate of the artists' streams for any son
 Trusting Spotify to accurately represent an artist’s popularity, we can see how
 the number of leads and the number of features affect the artist’s popularity rating.
 
-![](assets/Main_v_popularity.png)
+![](/assets/Main_v_popularity.png)
 
-![](assets/MSupport_v_popularity.png)
+![](/assets/MSupport_v_popularity.png)
 
 
 
