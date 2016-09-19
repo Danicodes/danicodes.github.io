@@ -1,0 +1,16 @@
+import requests
+from BeautifulSoup import BeautifulSoup
+
+request = requests.get("http://www.vgchartz.com/gamedb/")
+content = request.content
+soup = BeautifulSoup(''.join(content))
+game_table_raw = soup.findAll('table')
+>>> type(game_table_raw)
+<type 'list'>
+>>> type(game_table_raw[0])
+<class 'BeautifulSoup.Tag'>
+try:
+	for th in soup.find("tr").find_all("th")]:
+          headings.append(th.get_text())
+except TypeError:
+          headings.append("None")
