@@ -96,27 +96,3 @@ compared to the other two groups. This is due to the fact that we have some extr
 values in the data -- those artists with 100 lead and more than 200 features.
 That throws off the algorithm we use to group the data. So it is very possible
 we’re not seeing the true spread within the purple and blue groups.
-
-
-***Defining Words of Hip-Hop?***
-
-If there’s anything that could determine popularity it’s content, right?
-
-Just for fun, I randomly sampled each group and analyzed the lyrics of the
-artists’ songs. Using the frequency of the words, I hoped to gain a sense of
-whether or not the content varies between the group.
-
-The artists sampled were:
-
-Red Group: Jahbo, Zu Keeper, Big Hit, Arabian Prince, Heather Victoria
-Purple Group: The Embassy, Beth Orton, Ty Dolla $ign, Army of The Pharaohs, K.P. & Envyi
-Blue Group: 2 LIVE CREW, Isyss, Chi-Ali, The Material, True Worshippers
-
-And here are the most frequent lyrics out of the groups, as represented by those samples.:
-
-Red Group: (niggas', 22), ('need', 22), ('ready', 22),  ('bitch', 20) ('know', 20), ('recognize', 18)
-Purple Group: ('niggas', 69), ('no', 55), ('shit', 50), ('man', 42), ('back', 40), ('down', 39)
-Blue Group: ('no', 113), ('bitch', 109), ('fuck', 105), ('pussy', 102), ('Brother', 100), ('down', 97)
-
-From what I found, there doesn’t seem to be that much of a difference in content,
-but perhaps the take away here is that sentiment is key.
