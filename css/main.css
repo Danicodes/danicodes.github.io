@@ -50,6 +50,7 @@
   border: 3px solid #fff;
   border-radius:100%;
 }
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -72,7 +73,7 @@
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: rgba(0,0,0,0.9);
     color: white;
 }
 
@@ -82,7 +83,7 @@
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: rgba(0,0,0,0.9);
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -107,7 +108,7 @@
 
 /* The Close Button */
 .close {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
