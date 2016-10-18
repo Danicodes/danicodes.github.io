@@ -7,7 +7,8 @@ categories: [python, challenges, machine learning]
 tags: [python, k-means, data, analysis, unsupervised learning, machine learning]
 ---
 *modeling relationships between artists as a network*
-*****
+
+****************
 ***Hindsight is 20/20***
 
 *(Every time I get feedback on my work, I will update my analysis to incorporate that feedback)*
