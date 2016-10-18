@@ -1,6 +1,6 @@
 # Site settings
 title: danicodes
-description: 'moving from confusion to understanding with data'
+description: 'discovering cool things by experimenting with machine learning'
 url: 'http://danicodes.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
