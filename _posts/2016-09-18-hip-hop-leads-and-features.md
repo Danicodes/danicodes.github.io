@@ -4,8 +4,9 @@ title:  Hip Hop Features
 date:   2016-09-18
 published: true
 categories: [python, challenges, machine learning]
-tags: [python, data, analysis, challenges]
+tags: [python, k-means, data, analysis, unsupervised learning, machine learning]
 ---
+
 *Using k-means cluster to categorize hip hop artists*
 
 ***************
