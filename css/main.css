@@ -78,7 +78,9 @@
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 2px 16px;
+    overflow-y: auto;
+}
 
 /* Modal Content */
 .modal-content {
