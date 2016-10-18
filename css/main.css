@@ -79,9 +79,12 @@
 
 /* Modal Body */
 .modal-body {padding: 2px 16px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
+body.modal-open {
+    position: fixed;
+}
 /* Modal Content */
 .modal-content {
     position: relative;
