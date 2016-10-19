@@ -89,6 +89,7 @@ body.modal-open {
 /* Modal Content */
 .modal-content {
     position: relative;
+    font-family: Georgia;
     background-color: rgba(0,0,0,0.9);
     margin: auto;
     padding: 0;
