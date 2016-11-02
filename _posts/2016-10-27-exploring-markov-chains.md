@@ -23,9 +23,8 @@ Thus the most probable action I would take would be to eat cereal. After this th
 
 Pretty cool
 
-**Markovify the Debate**
-
-<form action="C:/Users/Documents/DataSets/markov_debate/debate_cgi.py">
+**Markovify the Debate**         
+<form action="C/debate_cgi.py">
   Number of lines for this Debate:
   <input type="number" name="lines" min="0" max="50" step="1" value="3">
   <input type="submit">
