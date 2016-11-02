@@ -6,7 +6,9 @@ published: true
 categories: [python, machine learning]
 tags: [python, data, analysis, machine learning]
 ---
-*Markov chains and the Presidential Debate -- Spoiler: Hilarity ensues*
+*Markov chains and the Presidential Debate -- [Spoiler: Hilarity ensues]*
+
+***Random Kanye***
 
 Once upon a time, I was listening to a Linear Digressions podcast called "Random Kanye". On Linear Digressions they talk about topics in the Machine Learning sphere and this podcast was on Markov Chains.
 
@@ -14,16 +16,37 @@ Markov Chains are pretty cool. Basically, Markov chains tell you the probability
 
 For example, if you were to train a model with activities from my morning behavior, you could ask the question, what is the most probable action that Danielle will carry out just after waking up? And the model would show something like this:
 
-Brush teeth Pr: 0.10 (I brush my teeth after breakfast okay?)
-Eat Cereal Pr: 0.4
-Play Video Games Pr: 0.2
-Yoga Pr: 0.3
+|  Activity   |  Probability  |
+|-----------:|:-------------:|
+|Brush teeth| 0.10|
+|Eat Cereal | 0.40|
+|Play Video Games| 0.20|
+|Yoga| 0.30|
 
-Thus the most probable action I would take would be to eat cereal. After this the most probable actions are updated based on eating cereal being the previous action.
+*Aside: (I brush my teeth after breakfast okay?)*
 
-Pretty cool
 
-**Markovify the Debate**         
+After training a model with my a few days of my behavior, the model would determine the most probable action I would take after waking up would be to eat cereal.
+
+After this, the probabilities for each action I might take are updated based on eating cereal being the initial action.
+
+Pretty cool, right?
+
+***Text Generation***
+
+What do Markov chains have to do with Kanye?
+Well, one cool thing that Markov chains have been used for is to generate text.
+
+In the same way a model could be trained with a sequence of behaviors, a model can be trained with sentences -- sequences of words.
+
+Everyone has a particular manner of speech and some words are more likely to appear in my sentence structure than that of Kanye's and vice versa. It's this idea that has enabled things like text prediction on your cell phone.
+When you mostly begin sentences with "heyyyyy" instead of "hi", it comes up more in your text prediction when you try to start a sentence.
+
+In the podcast, I have been referencing, they constructed a model based on Kanye West lyrics and Biblical Text to create... [Random Kanye](http://genesisofkanye.tumblr.com/)
+
+
+
+***Markovify the Debate***         
 <form action="C/debate_cgi.py">
   Number of lines for this Debate:
   <input type="number" name="lines" min="0" max="50" step="1" value="3">
