@@ -3,11 +3,12 @@
 import markov_debate
 import cgi, cgitb
 
-cgitb.enable(display=0, logdir="/path/to/logdir")
+cgitb.enable()
 
 form = cgi.FieldStorage()
 
 num_lines = form.gettext()
+
 response = markov_debate.banter(num_lines)
 
 print "Content-type:text/html\r\n\r\n"
@@ -19,4 +20,3 @@ print "<body>"
 print "<p>%s</p>" % (response)
 print "</body>"
 print "</html>"
-
