@@ -17,7 +17,7 @@ Markov Chains are pretty cool. Basically, Markov chains tell you the probability
 For example, if you were to train a model with activities from my morning behavior, you could ask the question, what is the most probable action that Danielle will carry out just after waking up? And the model would show something like this:
 
 |  Activity   |  Probability  |
-|-----------:|:-------------:|
+|-----------|:-------------:|
 |Brush teeth| 0.10|
 |Eat Cereal | 0.40|
 |Play Video Games| 0.20|
@@ -46,9 +46,4 @@ In the podcast, I have been referencing, they constructed a model based on Kanye
 
 
 
-***Markovify the Debate***         
-<form action="C/debate_cgi.py">
-  Number of lines for this Debate:
-  <input type="number" name="lines" min="0" max="50" step="1" value="3">
-  <input type="submit">
-</form>
+***Markovify the Debates [HERE](https://markov-app.herokuapp.com/)***         
