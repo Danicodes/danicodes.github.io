@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Hip Hop Leads and Features Reflection
-date:   2016-09-18
+date:   2016-10-27
 published: true
 categories: [python, challenges, machine learning]
 tags: [python, k-means, data, analysis, unsupervised learning, machine learning]
