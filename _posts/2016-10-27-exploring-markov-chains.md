@@ -10,18 +10,18 @@ tags: [python, data, analysis, machine learning]
 
 ***Random Kanye***
 
-Once upon a time, I was listening to a Linear Digressions podcast called "Random Kanye". On Linear Digressions they talk about topics in the Machine Learning sphere and this podcast was on Markov Chains.
+Once upon a time, I was listening to a [Linear Digressions](http://lineardigressions.com/) podcast called "Random Kanye". On Linear Digressions they talk about topics in the Machine Learning sphere and this podcast focused on Markov Chains.
 
 Markov Chains are pretty cool. Basically, Markov chains tell you the probability of moving from one state to another.
 
 For example, if you were to train a model with activities from my morning behavior, you could ask the question, what is the most probable action that Danielle will carry out just after waking up? And the model would show something like this:
 
-|  Activity   |  Probability  |
-|-----------|:-------------:|
-|Brush teeth| 0.10|
-|Eat Cereal | 0.40|
-|Play Video Games| 0.20|
-|Yoga| 0.30|
+|  Activity      |  Probability  |
+|----------------|---------------|
+|Brush teeth     | 0.10          |
+|Eat Cereal      | 0.40          |
+|Play Video Games| 0.20          |
+|Yoga            | 0.30          |
 
 *Aside: (I brush my teeth after breakfast okay?)*
 
@@ -32,7 +32,7 @@ After this, the probabilities for each action I might take are updated based on 
 
 Pretty cool, right?
 
-***Text Generation***
+***Text Generation and other Applications***
 
 What do Markov chains have to do with Kanye?
 Well, one cool thing that Markov chains have been used for is to generate text.
@@ -46,4 +46,8 @@ In the podcast, I have been referencing, they constructed a model based on Kanye
 
 
 
-***Markovify the Debates [HERE](https://markov-app.herokuapp.com/)***         
+***Markovify the Debates [HERE](https://markov-app.herokuapp.com/)***       
+
+References:
+http://setosa.io/ev/markov-chains/
+  
