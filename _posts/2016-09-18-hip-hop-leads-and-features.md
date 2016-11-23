@@ -6,24 +6,6 @@ published: true
 categories: [python, challenges, machine learning]
 tags: [python, k-means, data, analysis, unsupervised learning, machine learning]
 ---
-*modeling relationships between artists as a network*
-
-****************
-***Hindsight is 20/20 [In progress]***
-
-*(Every time I get feedback on my work, I will update my analysis to incorporate that feedback)*
-
-After getting feedback on my k-means cluster approach I've decided that this problem -- the leading artist versus the featuring artist, would be better modeled as a network.
-
-Truthfully, I had just learned about k-means and was eager to see it in action on some data, whether or not this was  'right' to do, I see that there is a clearer way to view the relationship between my variables.
-
-<div>
-    <a href="https://plot.ly/~williams11/6/" target="blank" title="Relationship between Hip-Hop Artists&#39; Popularity and Number of Songs as Leading or Supporting Artist" style="display: block; text-align: center;"><img src="https://plot.ly/~williams11/6.png" alt="Relationship between Hip-Hop Artists&#39; Popularity and Number of Songs as Leading or Supporting Artist" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="williams11:6"  src="https://plot.ly/embed.js" async></script>
-</div>
-
-
----
 *Using k-means cluster to categorize hip hop artists*
 
 ***************
