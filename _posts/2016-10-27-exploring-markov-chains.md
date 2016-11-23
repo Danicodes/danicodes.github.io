@@ -48,7 +48,7 @@ When you mostly begin sentences with "Hey" instead of "Hi", you'll notice that "
 In the podcast, I have been referencing, they constructed a model based on a mixture of Kanye West lyrics and biblical text to create... [Random Kanye](http://genesisofkanye.tumblr.com/)
 
 And using the 2016 Presidential Debate Transcripts, I've created a mini-debate simulator here...
-*Markovify the Debates [HERE](https://markov-app.herokuapp.com/)*
+(*[Markovify the Debates](https://markov-app.herokuapp.com/)*)
 
 Hidden Markov models have formed a large part of accurate [spam filtering](http://crm114.sourceforge.net/docs/Plateau99.pdf) in the CRM114 program. Hidden Markov models essentially take into context a group of words as a state. The essential idea, however, is the same. Some words are more likely to appear in spam mail than not. Given a corpus of spam, a Markov model can accurately detect the probability of an email being spam.  
 
