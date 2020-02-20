@@ -23,7 +23,7 @@ $(document).ready(function () {
   }
 
   if (window.location.pathname.length > 5 ){
-  console.log('{{site.url}}{{site.baseurl}}')
+  console.log('siteurl:{{ site.url }} baseurl:{{ site.baseurl }} title: {{ site.title }}')
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 

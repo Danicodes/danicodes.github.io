@@ -1,7 +1,7 @@
 # Site settings
 title: danicodes
 description: 'discovering cool things by experimenting with machine learning'
-url: 'http://danicodes.github.io'
+url: 'http://danicodes.github.io/'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
