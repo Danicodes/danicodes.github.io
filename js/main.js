@@ -22,8 +22,9 @@ $(document).ready(function () {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
+console.log('siteurl:{{ site.url }} baseurl:{{ site.baseurl }} title: {{ site.title }}')
+
   if (window.location.pathname.length > 5 ){
-  console.log('siteurl:{{ site.url }} baseurl:{{ site.baseurl }} title: {{ site.title }}')
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
