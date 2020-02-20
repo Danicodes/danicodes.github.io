@@ -5,6 +5,7 @@ sitemap:
 ---
 
 $(document).ready(function () {
+    console.log("Task")
   $('a.blog-button').click(function (e) {
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
     currentWidth = $('.panel-cover').width()
@@ -21,9 +22,14 @@ $(document).ready(function () {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
-  if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
+  if (window.location.pathname.length > 5 ){
+  console.log('{{site.url}}{{site.baseurl}}')
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
+
+ // if (window.location.pathname !== '{{ site.url }}/' && window.location.pathname !== '{{ site.url }}/index.html') {
+ //   $('.panel-cover').addClass('panel-cover--collapsed')
+ // }
 
   $('.btn-mobile-menu').click(function () {
     $('.navigation-wrapper').toggleClass('visible animated bounceInDown')

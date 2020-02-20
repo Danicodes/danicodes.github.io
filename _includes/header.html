@@ -3,13 +3,67 @@
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
 </span>
 
-<header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
+<header class="panel-cover" style="background-image: url({{ site.baseurl }}images/sunrisesunset.jpg)">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
+
+       <img id="myImg" title="About Me!"
+          src="{{ site.baseurl }}images/Chibime.jpg"
+          class="user-image" alt="About Me!"
+            onclick="document.getElementById('myModal').style.display='block'"/>
+
+          <!--The modal -->
+          <div id="myModal" class="modal fade" aria-hidden="true">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                <h2>About Me!</h2>
+              </div>
+              <div class="modal-body">
+                <p><em>I love working with data more than Kanye West loves himself!</em></p>
+                <p>I'm on a mission to understand Data Science through experimentation.
+                   My non-technical hobbies include: tennis, music, puppy-watching, video games and
+                   contemplating existential dread.</p>
+                <p>In addition to my hobbies, some topics that I'm passionate about (and that I am likely to do work on)
+                are: education, technology, animals, health, and of course, anything potentially humorous. </p>
+              </div>
+            </div>
+
+          </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var image = document.getElementById("myImg");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal
+            image.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <a href="{{ site.url }}" title="link to home of {{ site.title }}">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
@@ -20,12 +74,20 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="{{ site.url }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
             </ul>
           </nav>
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
+
+              <!-- Resume -->
+              <li class="navigation__item">
+                <a href="{{ site.url }}/assets/Resume_DanielleWilliams.10-28.pdf" title="My Resume">
+                  <i class="icon icon-page"></i>
+                  <span class="label">Resume</span>
+                </a>
+              </li>
 
             {% if site.author.twitter_username %}
               <!-- Twitter -->
@@ -33,16 +95,6 @@
                 <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
                   <i class="icon icon-social-twitter"></i>
                   <span class="label">Twitter</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
                 </a>
               </li>
             {% endif %}
