@@ -9,9 +9,8 @@ baseurl: '/'
 author:
   name: 'Danielle Williams'
   email: danicodes94@gmail.com
-  twitter_username: dani_codes
+  twitter_username: girlwithbox
   github_username:  danicodes
-  linkedin_username:  danicodes
 
 defaults:
   -
