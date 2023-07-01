@@ -1,11 +1,11 @@
 ---
 import PageLayout from "@/layouts/Base";
 import { Image } from "@astrojs/image/components";
-import aboutImg from "../assets/about-astro.png";
+import dogboy from "../assets/dogboy.jpg";
 
 const meta = {
 	title: "About",
-	description: "I'm a starter theme for Astro.build",
+	description: "Coder. Creative. Curious.",
 };
 ---
 
@@ -13,37 +13,32 @@ const meta = {
 	<div class="space-y-6">
 		<h1 class="title">About</h1>
 		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
+			Hey, my name is Dani and I have alot of hobbies -- one of them is coding.
+        </p>
+        <p>
+        These days I'm mostly livestreaming myself working on silly projects. I love learning in public, I learn a lot from the folks that interact in my stream and it also gives me space to learn new things, dive deep and have fun. I hope that anybody that stops in for the folks that are newer to programming - they can be inspired to approach their own learning with less fear; and for the more experienced folks, I hope they can have fun on a journey with me! 
 		</p>
+
+<br/>
 		<div class="flex justify-center">
-			<Image
-				src={aboutImg}
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
+        <figure>
+		    <figcaption>Unrelated photo of my dog being cute!</figcaption>
+            <Image
+				src={dogboy}
+				alt="My dog looking up at me with his face smushed on top of the couch"
+                title="Unrelated photo of my dog being cute"
 				loading="eager"
 			/>
+        </figure>
 		</div>
-		<p>Here are my some of my awesome built in features:</p>
+        <h2 class="title">Other Interests</h2>
+		<p>Some of my interests (honestly too many to list):</p>
 		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
+			<li>Video Games</li>
+			<li>Politics</li>
+			<li>Dogs</li>
+			<li>Drawing</li>
+			<li>Fitness</li>
 		</ul>
-		<p>
-			Clone or fork my
-			<a
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="github repository"
-			>
-				repo
-			</a> if you like me!
-		</p>
 	</div>
 </PageLayout>

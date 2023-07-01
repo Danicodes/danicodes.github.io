@@ -17,9 +17,8 @@ export const MENU_LINKS = [
 export const SOCIAL_LINKS = {
 	github: "https://github.com/danicodes",
 	twitter: "https://www.twitter.com/girlwithbox",
-	email: "@protonmail.com",
 };
 
 export const About = {
-	description: "Hi I'm Dani!"
+	description: "Hi I'm Dani! I'm experimenting with making cool things"
 };
