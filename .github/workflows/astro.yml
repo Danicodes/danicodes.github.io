@@ -4,6 +4,9 @@
 #
 name: Deploy Astro site to Pages
 
+variables:
+  resolve-dep-from-path: false
+
 on:
   # Runs on pushes targeting the default branch
   push:
