@@ -1,0 +1,51 @@
+@tailwind base;
+
+.user-image {
+    @apply relative w-[100px] h-[100px] mb-[1.2em] rounded-[100%] border-[3px] border-solid border-white;
+}
+
+.modal {
+    @apply relative z-[1] h-full overflow-auto bg-[rgba(0,0,0,0)] pt-[100] left-0 top-0;
+}
+
+#myImg:hover {
+    @apply opacity-60;
+}
+
+.modal-content {
+    @apply relative bg-[rgba(0,0,0,0.2)] shadow-[0_2px_2px_0_rgba(0,0,0,0.7),0_2px_2px_0_rgba(0,0,0,.9)] m-auto p-10 border-solid border-[#888];
+  font-family: Georgia, "Times New Roman", Times, serif;
+  --webkit-animation-name: animateleft;
+  --webkit-animation-duration: 0.4s;
+  animation-name: animateleft;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animateleft {
+  from {
+    @apply left-[-500px] opacity-0;
+  }
+  to {
+    @apply opacity-100 left-0;
+  }
+}
+@keyframes animateleft {
+  from {
+    @apply left-[-500px] opacity-0;
+  }
+  to {
+    @apply opacity-100 left-0;
+  }
+}
+
+.close {
+  @apply text-[black] float-right text-[28px] font-[bold];
+}
+.close:hover,
+.close:focus {
+  @apply text-black no-underline cursor-pointer;
+}
+
+
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,38 @@
+---
+interface Props {
+    id : string
+    ,img : string
+    ,open: boolean
+};
+const { src } = Astro.props; 
+
+import { Image } from "@astrojs/image/components";
+import "../styles/modal.css";
+---
+
+<Image id="myImg" src={src} class="user-image flex flex-row" alt="About Me!"/>
+<!--The modal -->
+<div id="myModal" class="modal fade hidden flex flex-row">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>About Me!</h2>
+        </div>
+        <div class="modal-body">
+            <p><em>Practicing computer science so I'll know how to defend myself when the machines take over</em></p>
+            <p>Sharing projects I've been working on, projects I've *attempted* and what I've learnt along the way. Things I'm likely to write about or make projects about: politics, music, video games, and anything that makes me laugh - basically anything that sparks my curiousity.</p>
+            <p>Find more on the About Me page! (Bonus: you'll get to see a pic of my dog)</p>
+        </div>
+    </div>
+</div>
+
+ <script is:inline>
+const toggleClick = document.getElementById("myImg");
+toggleClick?.addEventListener("click", () => {
+    const modal = document.getElementById('myModal');
+   modal?.classList.toggle("hidden");
+    }
+);
+</script>
+   
+
