@@ -17,4 +17,18 @@ const post = defineCollection({
 	}),
 });
 
-export const collections = { post };
+const minis = defineCllection({
+    schema: z.object({
+        title: z.string().max(60),
+        description: z.string().min(40).max(100),
+        publishDate: z.string().transform((str) => new Date(str)),
+        image: z.string().optional(),
+        video: z.string().optional(),
+        isDraft: z.boolean(),
+    }),
+})
+
+export const collections = { 
+    'post': post
+    ,'minis': minis
+};
