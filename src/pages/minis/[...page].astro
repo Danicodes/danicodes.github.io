@@ -1,0 +1,64 @@
+---
+import type { Page, GetStaticPathsOptions } from "astro";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/Base";
+import MiniPreview from "@/components/blog/MiniPreview";
+import Pagination from "@/components/Paginator";
+import { getUniqueTags, sortMDByDate } from "@/utils";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+	let allPosts = await getCollection("minis")
+	allPosts = allPosts.filter(mini => mini.data.isDraft === false);
+	const allPostsByDate = sortMDByDate(allPosts);
+	const uniqueTags = getUniqueTags(allPosts);
+	return paginate(allPostsByDate, { props: { uniqueTags }, pageSize: 10 });
+}
+
+interface Props {
+	page: Page<CollectionEntry<"minis">>;
+	uniqueTags: string[];
+}
+
+const { page, uniqueTags } = Astro.props;
+
+const meta = {
+	title: "Miniblogs",
+	description: "A collection of mini blog posts by me",
+};
+
+const paginationProps = {
+	...(page.url.prev && {
+		prevUrl: {
+			url: page.url.prev,
+			text: `← Previous Posts`,
+		},
+	}),
+	...(page.url.next && {
+		nextUrl: {
+			url: page.url.next,
+			text: `Next Posts →`,
+		},
+	}),
+};
+---
+
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-6">Minis</h1>
+	{page.data.length == 0 && <p>No MiniBlogs Yet!</p>}
+	<div class="grid gap-y-16 sm:grid-cols-[4fr] sm:gap-x-8">
+		<section aria-label="Blog post list">
+			<ul class="space-y-8 text-left">
+				{
+					page.data.map((p) => (
+						<li class="flex flex-col flex-wrap gap-x-2 sm:flex-row [&_q]:w-full">
+							<MiniPreview post={p} as="h2" withDesc />
+						</li>
+					))
+				}
+			</ul>
+			<Pagination {...paginationProps} />
+		</section>
+	</div>
+</PageLayout>

@@ -1,0 +1,81 @@
+---
+import type { CollectionEntry } from "astro:content";
+import type { IElement } from "@/data/shared";
+import { getFormattedDate } from "@/utils";
+
+interface Props extends IElement {
+	post: CollectionEntry<"minis">;
+	withDesc?: boolean;
+}
+
+const { post, as: Element = "div", withDesc = false } = Astro.props;
+const date = new Date(post.data.publishDate);
+const datetime = date.toISOString();
+const postDate = getFormattedDate(date);
+let title = post.data.title;
+
+---
+
+<time datetime={datetime} class="min-w-[120px] text-gray-500">{postDate}</time>
+<div>
+<Element>
+	<a 
+		 href={`/minis/${post.slug}`} class="mini-post cactus-link" data-drawer-target=`${post.data.title}-drawer` data-drawer-show=`${post.data.title}-drawer` aria-controls="mini-drawer" rel="prefetch">
+		{post.data.title}
+	</a>
+</Element>
+{withDesc && <q class="line-clamp-3 mt-2 block italic">{post.data.description}</q>}
+	<!-- Drawer content -->
+	<div class=`mini-drawer hidden md:container md:mx-auto md:box-border h-75 w-100 p-8 border-solid border-4 overflow-auto drop-shadow-md gap-x-8 `>	
+		<button class='drawer-close-btn text-green-700 border border-green-700 hover:bg-green-700 hover:text-white focus:ring-2 focus:outline-none focus:ring-green-300 font-medium rounded-full text-sm p-1 text-center inline-flex items-center dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:focus:ring-green-800 dark:hover:bg-green-500'>
+			x
+		</button>
+		<div class="fetched-data">
+
+		</div>
+
+	</div>
+</div>
+
+<!-- the script seems to load before the frontmatter so a variable id won't work -->
+ <script>
+	document.addEventListener("DOMContentLoaded", () => {
+		// Load content in drawers when page loads
+		Array.from(document.getElementsByClassName(`mini-post`))
+		.forEach((element) => {
+			let drawerEl = element.parentElement!.parentElement!.getElementsByClassName('mini-drawer')[0];
+
+			// Create callback for a tag			
+			element.addEventListener('click', (e) => {
+				e.preventDefault();
+				// Show drawer
+				if (drawerEl.classList.contains('hidden')){
+					drawerEl.classList.remove('hidden');
+					drawerEl.classList.add('show');
+				}
+
+			})
+
+			// Fetch and load data			
+			let href : string = element.getAttribute('href') ? element.getAttribute('href')! : "/"
+			let miniUrl: RequestInfo = href;
+
+			fetch(miniUrl)
+			.then(response => response.text())
+			.then(html => {
+			// Update the content of the drawer with the fetched content
+					drawerEl.getElementsByClassName('fetched-data')[0].innerHTML += html
+					let closeButton = drawerEl.getElementsByClassName('drawer-close-btn')[0];
+					closeButton.addEventListener('click', function(e) {
+						e.preventDefault();
+						drawerEl.classList.remove('show');
+						drawerEl.classList.add('hidden');
+        });
+				})
+			.catch(error => console.error('Error fetching post content:', error));
+			
+			
+	});	
+})
+
+</script>
