@@ -1,0 +1,74 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import BaseLayout from "./Base.astro";
+import BlogHero from "@/components/blog/Hero";
+
+/*
+// TODO: hide tag aside when drawer open
+// Add close button
+// Fit object content and increase min-size
+// Expand drawer beyond single frame? */
+
+
+interface Minis {
+    minis: CollectionEntry<"minis">;
+}
+
+const { post } = Astro.props;
+console.log(post);
+console.log(Astro.props)
+const {
+    data: { title, description, publishDate, image, video, isDraft },
+    slug,
+} = post;
+
+// const previewImg = image ?? `${slug}.png`
+const miniDate = publishDate.toISOString();
+const { headings } = await post.render();
+---
+
+<script>
+	const scrollBtn = document.getElementById("to-top-btn") as HTMLButtonElement;
+	const targetHeader = document.getElementById("blog-hero") as HTMLDivElement;
+    function callback(entries: IntersectionObserverEntry[]) {
+		entries.forEach((entry) => {
+			// only show the scroll to top button when the heading is out of view
+            scrollBtn.dataset.show = (!entry.isIntersecting).toString();
+        });
+	}
+
+	scrollBtn.addEventListener("click", () => {
+		document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+	});
+
+	const observer = new IntersectionObserver(callback);
+	observer.observe(targetHeader);
+
+</script>
+
+<script>
+    const colorThemeMetaTag = document.querySelector("meta[name='theme-color']");
+
+    // get user preference of dark mode, 1st local storage, 2nd browser
+    function getThemePreference() {
+        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+            return localStorage.getItem("theme");
+            }
+            return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+
+    const isDark = getThemePreference() === "dark";
+
+
+</script>
+   <div class="md:mx-auto md:box-border h-75 w-100 p-8 border-green-50 min-width-full lg:flex lg:items-start">
+
+    <article class="flex-grow break-words">
+			<div
+				class="prose prose-sm prose-cactus  prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+			>
+				<slot />
+			</div>
+		</article>
+    </div> 

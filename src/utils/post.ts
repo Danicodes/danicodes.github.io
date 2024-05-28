@@ -1,12 +1,12 @@
 import type { CollectionEntry } from "astro:content";
 
-export function sortMDByDate(posts: CollectionEntry<"post">[] = []) {
+export function sortMDByDate(posts: CollectionEntry<"post">[]|CollectionEntry<"minis">[] = []) {
 	return posts.sort(
 		(a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf()
 	);
 }
 
-export function getUniqueTags(posts: CollectionEntry<"post">[] = []) {
+export function getUniqueTags(posts: CollectionEntry<"post">[]|CollectionEntry<"minis">[] = []) {
 	const uniqueTags = new Set<string>();
 	posts.forEach((post) => {
 		post.data.tags.map((tag) => uniqueTags.add(tag));
